@@ -17,22 +17,83 @@
 <body>
   <header class="header">
     <a href="index.html">
-      <img class="header__logo" src="img/logo.png" alt="">
+      <div class="header__logo">
+        <img class="header__img" src="img/Designer.png" alt="">
+        <p class="header__texto">FrontendStore</p>
+      </div>
     </a>
     <nav class="navegacion">
-      <div class="navegacion__elemento">
-        <input type="text">
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </div>
+      <i class="fa-solid fa-magnifying-glass navegacion__elemento"></i>
       <a class="navegacion__elemento navegacion__elemento--activo" href="index.html">Home</a>
       <a class="navegacion__elemento" href="tienda.html">Tienda</a>
       <a class="navegacion__elemento" href="nosotros.html">¿Quienes somos?</a>
       <a class="navegacion__elemento" href="contacto.html">Contacto</a>
-      <a class="navegacion__elemento" href="#">Carrito<i class="fa-solid fa-cart-shopping"></i></a>
-
+      <a class="navegacion__elemento" href="#">Carrito<i class="fa-solid fa-cart-shopping nave"></i></a>
+      </div>
     </nav>
   </header>
 
+  <section class="contenedor">
+    <div class="home">
+      <h1 class="home__titulo">Bienvenido a FrontendStore</h1>
+      <p class="home__p">Camisas devs para devs</p>
+    </div>
+  </section>
+
+  <main class="contenedor feature">
+    <h2 class="feature__titulo">Productos Destacados</h2>
+    <p class="feature__p">Nuestros productos mas vendidos</p>
+
+    <div class="feature__productos">
+      <div class="producto">
+        <a href="producto.html">
+          <img class="producto__img" src="img/3.png" alt="imagen camisa">
+          <h3 class="producto__titulo">VueJS</h3>
+          <div class="producto__precios">
+            <span class="producto__precios-rebaja">$14.99</span>
+            <span class="producto__precio-activo">$9.99</span>
+          </div>
+        </a>
+        <a href="producto.html" class="producto__btn">Comprar</a>
+      </div>
+
+      <div class="producto">
+        <a href="producto.html">
+          <img class="producto__img" src="img/5.png" alt="imagen camisa">
+          <h3 class="producto__titulo">VueJS</h3>
+          <div class="producto__precios">
+            <span class="producto__precios-rebaja">$14.99</span>
+            <span class="producto__precio-activo">$9.99</span>
+          </div>
+        </a>
+        <a href="producto.html" class="producto__btn">Comprar</a>
+      </div>
+
+      <div class="producto">
+        <a href="producto.html">
+          <img class="producto__img" src="img/7.png" alt="imagen camisa">
+          <h3 class="producto__titulo">VueJS</h3>
+          <div class="producto__precios">
+            <span class="producto__precios-rebaja">$14.99</span>
+            <span class="producto__precio-activo">$9.99</span>
+          </div>
+        </a>
+        <a href="producto.html" class="producto__btn">Comprar</a>
+      </div>
+    </div>
+
+    <div class="feature__btn">
+      <a class="producto__btn" href="tienda.html">Ver todo</a>
+    </div>
+  </main>
+
+
+
+  <footer class="footer">
+    <a href="#" class="footer__texto">Atencion al cliente</a>
+    <a href="#" class="footer__texto">Politicas e información</a>
+    <a href="#" class="footer__texto">suscribirse</a>
+  </footer>
 </body>
 
 </html>
